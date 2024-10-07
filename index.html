@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Document</title>
+</head>
+<body>
+    <h3 style="margin: 8px;">Simple calculator</h3>
+    
+
+        
+    <label>Type first no.</label><br>
+    <input type="text" id="firstno"><br>
+
+
+    <label>Type second no.</label><br>
+    <input type="text"  id="secondno"><br>
+
+    <button onclick="addition()" id="add">+</button>
+    <button onclick="subtraction()" id="add">-</button>
+    <button onclick="multiplication()" id="add">-</button>
+    <button onclick="division()" id="add">-</button><br>
+ <label id="result"></label>
+
+    <script>
+        function addition(){
+            var n1=(document.getElementById('firstno'));
+            console.log(n1.value)
+            var n2=(document.getElementById('secondno'));
+            console.log(n2.value)
+            var n1elm= parseFloat(n1.value);
+            var n2elm= parseFloat(n2.value);
+            var sum= n1elm+n2elm;
+
+            console.log(sum)
+            document.getElementById('result').innerText= sum;
+
+        }
+        function subtraction(){
+            var n1=(document.getElementById('firstno'));
+            console.log(n1.value)
+            var n2=(document.getElementById('secondno'));
+            console.log(n2.value)
+            var n1elm= parseFloat(n1.value);
+            var n2elm= parseFloat(n2.value);
+            var sum= n1elm-n2elm;
+
+            console.log(sum)
+            document.getElementById('result').innerText= sum;
+
+        }
+        function multiplication(){
+            var n1=(document.getElementById('firstno'));
+            console.log(n1.value)
+            var n2=(document.getElementById('secondno'));
+            console.log(n2.value)
+            var n1elm= parseFloat(n1.value);
+            var n2elm= parseFloat(n2.value);
+            var sum= n1elm*n2elm;
+
+            console.log(sum)
+            document.getElementById('result').innerText= sum;
+
+        }
+        function division(){
+            var n1=(document.getElementById('firstno'));
+            console.log(n1.value)
+            var n2=(document.getElementById('secondno'));
+            console.log(n2.value)
+            var n1elm= parseFloat(n1.value);
+            var n2elm= parseFloat(n2.value);
+            var sum= n1elm/n2elm;
+
+            console.log(sum)
+            document.getElementById('result').innerText= sum;
+
+        }
+   
+    </script>
+</body>
+
+</html>
